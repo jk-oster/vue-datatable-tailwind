@@ -1,14 +1,15 @@
 <template>
   <v-app>
     <v-main>
-      <v-btn @click="add">Add</v-btn>
-      <HelloWorld :tableId="tableId" :headers="headers" v-model:items="items" />
+      <v-btn @click="add" class="w-full">Add</v-btn>
+      <HelloWorld v-model:items="items" />
     </v-main>
   </v-app>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import './assets/tailwind.css'
 import { data } from "./data.js"
 
 export default {
@@ -19,8 +20,6 @@ export default {
   },
 
   data: () => ({
-    tableId: "1",
-    headers: data.headers,
     items: data.items,
   }),
   methods: {

@@ -1,16 +1,5 @@
 export const data = {
-  headers: [
-    {
-      text: "Dessert (100g serving)",
-      sortable: true,
-      value: "name",
-    },
-    { text: "Calories", value: "calories", sortable: true },
-    { text: "Fat (g)", value: "fat", sortable: true },
-    { text: "Carbs (g)", value: "carbs", sortable: true  },
-    { text: "Protein (g)", value: "protein", sortable: true  },
-    { text: "Iron (%)", value: "iron", sortable: true  },
-  ],
+  
   items: [
     {
       name: "Frozen Yogurt",
